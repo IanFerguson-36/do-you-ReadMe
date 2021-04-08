@@ -8,7 +8,7 @@ const questions = [
     {
       type: "input",
       message: "What is your title?",
-      name: "Title",
+      title: "Title",
     },
     {
       type: "input",
@@ -30,6 +30,10 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
+  const readMe = `#Title
+    ${questions.title}
+    `;
+
   fs.writeFile("customReadme.md", process.argv[2], (err) =>
     err ? console.error(err) : console.log("Success!")
   );
