@@ -1,6 +1,9 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  if (license === "MIT") {
+  }
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -14,9 +17,19 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `
   #Title ${data.Title}
-  #Description ${data.Description}
-  #Installation Process ${data.Install}
-  #License ${data.License}
+  #Table of Contents
+  Description
+  Install
+  Title
+  Usage
+  #Description
+   ${data.Description}
+  #Installation Process
+   ${data.Install}
+  #License
+   ${data.License}
+  #Usage 
+   ${data.Usage}
 
 `;
 }

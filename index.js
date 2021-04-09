@@ -9,6 +9,7 @@ const questions = [
     message: "What is your title?",
     name: "Title",
   },
+
   {
     type: "input",
     message: "What is its description?",
@@ -23,6 +24,11 @@ const questions = [
     type: "input",
     message: "License?",
     name: "License",
+  },
+  {
+    type: "input",
+    message: "Usage?",
+    name: "Usage",
   },
 ];
 
