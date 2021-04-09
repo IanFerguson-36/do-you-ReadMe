@@ -1,20 +1,20 @@
 
-  # Title: The best title
+  # Title: The Best Readme of All Time
   # Table of Contents
   Description
   Install
   Title
   Usage
   # Description
-   the best description
+   The best app of all time
   # Installation Process
-   the best install
+   npm i [npm name here]
   # License
-   No license listed
+   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   # Usage 
-   yes
+   To be the best app ever
   # Email Address
   ian.ferg36@gmail.com
   # Github Profile
-  githoob
+  www.github.com/ianferguson-36
 
