@@ -21,14 +21,25 @@ const questions = [
     name: "Install",
   },
   {
-    type: "input",
+    type: "list",
     message: "License?",
     name: "License",
+    choices: ["MIT", "Apache", "Boost", "None"],
   },
   {
     type: "input",
     message: "Usage?",
     name: "Usage",
+  },
+  {
+    type: "input",
+    message: "Email?",
+    name: "Email",
+  },
+  {
+    type: "input",
+    message: "Github Profile?",
+    name: "Github",
   },
 ];
 
@@ -36,13 +47,6 @@ const questions = [
 function init() {
   inquirer
     .prompt(questions)
-    // .then((answers) => {
-    //   const readMe = `#Title ${questions[0].name}
-    // #Description ${questions[1].name}
-    // #Installation Process ${questions[2].name}
-    // #License ${questions[3].name}`;
-    //   console.log(answers);
-    // })
 
     .then((answers) => {
       const htmlPageContent = generateMarkdown(answers);
